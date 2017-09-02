@@ -3,11 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package coche;
+package main;
 
 /**
- *
- * @author Alumno
+ * <h1>Coche</h1>
+ * 
+ * <p>La aplicación de consola Coche simula algunas acciones de los coches a través de métodos,
+ * a la vez ejemplifica algunos casos de sobreescritura y sobrecarga de métodos</p>
+ * 
+ * @author Carlos Eduardo González Anguiano
+ * @version 1.0.0
+ * @since 01-09-2017
  */
 public class main {
 
