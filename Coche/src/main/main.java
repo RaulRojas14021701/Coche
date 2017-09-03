@@ -5,6 +5,8 @@
  */
 package main;
 
+import general.Tesla;
+
 /**
  * <h1>Coche</h1>
  * 
@@ -19,14 +21,21 @@ public class main {
 
     /**
      * @param args the command line arguments
+     * @throws java.lang.Exception Error por pasar una carga mayor a 100% o menor a 0
      */
-    public static void main(String[] args) {
-        
-        
-        
+    public static void main(String[] args) throws Exception {
         //Ahora el constructor por default genera un error
         //Tesla teslita = new Tesla();
         //teslita.comprar("Saunas");
+        
+        Tesla t1 = new Tesla("Roberto");
+        t1.comprar("Carlos");
+        Tesla t2 = new Tesla("Gregorio", 75);
+        t2.comprar("Rebecca");
+        t1.encender();
+        t2.encender();
+        t1.cargar(50);
+        t2.cargar(50);
     }
     
 }

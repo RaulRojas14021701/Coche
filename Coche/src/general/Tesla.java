@@ -69,7 +69,7 @@ public class Tesla extends Coche{
     * <h3>encender</h3>
     * Imprime que el auto ha sido encendido en caso de tener una carga mayor al 10%
     */
-    private void encender(){
+    public void encender(){
         if(this.carga < 10){
             System.out.println("El auto no tiene carga suficiente");
         } else {
@@ -84,7 +84,7 @@ public class Tesla extends Coche{
     * 
     * @param carga Valor que se le quiere sumar a la carga
     */
-    private void cargar(int carga){
+    public void cargar(int carga){
         if(carga < 0 || carga + this.carga > 100){
             System.out.println("No se puede sobrecargar la batería");
         } else {
